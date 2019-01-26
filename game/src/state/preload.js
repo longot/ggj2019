@@ -37,20 +37,26 @@ export default class extends Phaser.State {
     })
 
     this.load.image('background', utils.fixFilePath(require('../../assets/images/background.jpg')));
+    this.load.image('bathroom', utils.fixFilePath(require('../../assets/images/room/bathroom.jpg')));
+    this.load.image('bedroom', utils.fixFilePath(require('../../assets/images/room/bedroom.jpg')));
+    this.load.image('emptyroom', utils.fixFilePath(require('../../assets/images/room/empty.jpg')));
+    this.load.image('kitchen', utils.fixFilePath(require('../../assets/images/room/kitchen.jpg')));
+    this.load.image('living_z', utils.fixFilePath(require('../../assets/images/room/living_z.jpg')));
+    this.load.image('livingroom', utils.fixFilePath(require('../../assets/images/room/living-room.jpg')));
+    this.load.spritesheet('button_start', utils.fixFilePath(require('../../assets/sprite/buttons/button_sprite_start.png')), 247, 62);
+
     this.load.atlas(
       'person',
       utils.fixFilePath(require('../../assets/sprite/.build/sprite_person.png')),
       utils.fixFilePath(require('../../assets/sprite/.build/sprite_person.json'))
     );
-    // this.load.atlas(
-    //   'items',
-    //   utils.fixFilePath(require('../../assets/sprite/.build/sprite_items.png')),
-    //   utils.fixFilePath(require('../../assets/sprite/.build/sprite_items.json'))
-    // );
+    this.load.atlas(
+      'doors',
+      utils.fixFilePath(require('../../assets/sprite/.build/sprite_doors.png')),
+      utils.fixFilePath(require('../../assets/sprite/.build/sprite_doors.json'))
+    );
     // this.load.audio('sound_final', utils.fixFilePath(require('../../assets/sound/sound_final.mp3')));
-    // this.load.audio('sound_start', utils.fixFilePath(require('../../assets/sound/sound_start.mp3')));
-    // this.load.audio('sound_tapitem', utils.fixFilePath(require('../../assets/sound/sound_tapitem.mp3')));
-    // this.load.audio('sound_typewriter', utils.fixFilePath(require('../../assets/sound/sound_typewriter.mp3')));
+    this.load.audio('door_open', utils.fixFilePath(require('../../assets/sound/door_open.mp3')));
   }
   update () {
     if (this.fontsReady && this.assetsLoaded) {

@@ -20,7 +20,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: './game/src/index.html', to: 'index.html' },
-      { from: './game/src/locacle.js', to: 'locacle.js' },
+      { from: './node_modules/phaser-debug/dist/phaser-debug.js', to: 'phaser-debug.js' },
       { from: phaser, to: 'vendor.js' }
     ]),
     new webpack.ExtendedAPIPlugin(),

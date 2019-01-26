@@ -2,6 +2,8 @@ import utils from '../utils'
 
 export default class extends Phaser.State {
   init () {
+    // this.game.pdebug = this.game.plugins.add(Phaser.Plugin.Debug);
+
     this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.game.scale.setShowAll();
     this.game.scale.refresh();
