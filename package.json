@@ -1,0 +1,40 @@
+{
+  "name": "GGJ2019",
+  "version": "0.0.1",
+  "description": "Game from Global Game Jam 2019",
+  "author": "Andrii Khudolii <longot@gmail.com>",
+  "license": "proprietary",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "run": "http-server -c-1 build -o",
+    "sprite": "node game/sprite.js",
+    "clean": "node_modules/.bin/rimraf dist",
+    "serve": "npm run sprite && npm run build.dev",
+    "build.dev": "node_modules/.bin/webpack --progress --config game/webpack.developer.js --watch",
+    "build.prod": "node_modules/.bin/webpack --progress --config game/webpack.publish.js"
+  },
+  "dependencies": {
+    "file-loader": "^1.1.11",
+    "http-server": "^0.11.1",
+    "phaser-ce": "^2.8.3",
+    "phaser-debug": "^1.1.8",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-webpack-plugin": "^0.1.1",
+    "base64-font-loader": "0.0.4",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^0.28.11",
+    "spritesheet-js": "^1.2.6",
+    "style-loader": "^0.21.0",
+    "uglifyjs": "^2.4.11",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.4.1",
+    "webpack-archive-plugin": "^3.0.0",
+    "webpack-merge": "^4.1.4"
+  }
+}

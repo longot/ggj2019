@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "sprite_person2.png",
+		"size": {"w":145,"h":119},
+		"scale": "1"
+	},
+	"frames": [
+		{
+			"filename": "C3-1.png",
+			"frame": {"x":5,"y":5,"w":38,"h":52},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":18,"y":3,"w":38,"h":52},
+			"sourceSize": {"w":80,"h":60}
+		},
+		{
+			"filename": "C3-3.png",
+			"frame": {"x":53,"y":5,"w":38,"h":52},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":18,"y":5,"w":38,"h":52},
+			"sourceSize": {"w":80,"h":60}
+		},
+		{
+			"filename": "C3-2.png",
+			"frame": {"x":101,"y":5,"w":39,"h":47},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":19,"y":6,"w":39,"h":47},
+			"sourceSize": {"w":80,"h":60}
+		},
+		{
+			"filename": "C3-0.png",
+			"frame": {"x":5,"y":67,"w":35,"h":47},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":24,"y":8,"w":35,"h":47},
+			"sourceSize": {"w":80,"h":60}
+		}
+	]
+}
