@@ -37,13 +37,25 @@ export default class extends Phaser.State {
     })
 
     this.load.image('background', utils.fixFilePath(require('../../assets/images/background.jpg')));
-    this.load.image('bathroom', utils.fixFilePath(require('../../assets/images/room/bathroom.jpg')));
+    // this.load.image('bathroom', utils.fixFilePath(require('../../assets/images/room/bathroom.jpg')));
     this.load.image('bedroom', utils.fixFilePath(require('../../assets/images/room/bedroom.jpg')));
     this.load.image('emptyroom', utils.fixFilePath(require('../../assets/images/room/empty.jpg')));
     this.load.image('kitchen', utils.fixFilePath(require('../../assets/images/room/kitchen.jpg')));
-    this.load.image('living_z', utils.fixFilePath(require('../../assets/images/room/living_z.jpg')));
-    this.load.image('livingroom', utils.fixFilePath(require('../../assets/images/room/living-room.jpg')));
+    // this.load.image('living_z', utils.fixFilePath(require('../../assets/images/room/living_z.jpg')));
+    // this.load.image('livingroom', utils.fixFilePath(require('../../assets/images/room/living-room.jpg')));
+    this.load.image('item_rectangular', utils.fixFilePath(require('../../assets/images/item/rectangular.png')));
+    this.load.image('item_beer', utils.fixFilePath(require('../../assets/images/item/beer.png')));
+    this.load.image('item_bread', utils.fixFilePath(require('../../assets/images/item/bread.png')));
+    this.load.image('item_blade', utils.fixFilePath(require('../../assets/images/item/blade.png')));
+    this.load.image('item_beer_mask', utils.fixFilePath(require('../../assets/images/item/beer_mask.png')));
+    this.load.image('item_bread_mask', utils.fixFilePath(require('../../assets/images/item/bread_mask.png')));
+    this.load.image('item_blade_mask', utils.fixFilePath(require('../../assets/images/item/blade_mask.png')));
     this.load.spritesheet('button_start', utils.fixFilePath(require('../../assets/sprite/buttons/button_sprite_start.png')), 247, 62);
+
+    this.load.image('sheep', utils.fixFilePath(require('../../assets/images/sheep.png')));
+    this.load.image('bullet', utils.fixFilePath(require('../../assets/images/shmup-bullet.png')));
+    // this.load.spritesheet('bullet', utils.fixFilePath(require('../../assets/images/rgblaser.png')), 10, 10);
+    this.load.image('machinegun', utils.fixFilePath(require('../../assets/images/machine-gun.png')));
 
     this.load.atlas(
       'person',
