@@ -115,6 +115,7 @@ export default class extends Phaser.State {
       rooms: ['bathroom', 'bedroom', 'emptyroom', 'kitchen', 'living_z', 'livingroom'],
       items: {},
       itemCounter: 0,
+      sicretCounter: 0,
       findItem: [],
       changeKitchen: function() {
         this.state.gameElements.background.destroy();
@@ -172,7 +173,14 @@ export default class extends Phaser.State {
       },
       touchItem(e) {
         var name = e.key.slice(5);
-        
+        console.log(name)
+        if (name === 'blade') {
+          this.sicretCounter ++;
+          console.log(this.sicretCounter);
+          if (this.sicretCounter >= 3) {
+            this.changmeEptyroom();  
+          }
+        }
         if (this.findItem.indexOf(name) > -1) {
           return;
         }
@@ -249,7 +257,7 @@ export default class extends Phaser.State {
       },
       hitSheep: function() {
       },
-      changeEmptyroom: function() {
+      changmeEptyroom: function() {
         this.state.gameElements.background.destroy();
         this.state.gameElements.background = this.state.game.add.image(0, 0, 'emptyroom');
 
